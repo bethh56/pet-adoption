@@ -80,10 +80,12 @@ const buildPetCards = () => {
     let domString = '';
     for (let i = 0; i < pets.length; i++) {
         domString += `<div class ="petInfo">`;
-        domString += `<h2>${pets[i].Name}</h2>`;
+        domString += `<header><h2>${pets[i].Name}</h2></header>`;
+        domString += `<section>`;
         domString += `<img src="${pets[i].Image}"/>`;
         domString += `<h4>${pets[i].Color}</h4>`;
         domString += `<h4>${pets[i].skill}</h4>`;
+        domString += `</section>`;
         domString += `<footer><h3>${pets[i].type}</h3></footer>`;
         domString += `</div>`;
     }

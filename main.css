@@ -1,35 +1,42 @@
 body {
     background-color: #d9e0d9;
-    margin: 50px; 
+    margin: 5%; 
     text-align: center;  
 }
 
 img {
-    height: 60%;
-    width: 55%;
+    width: 80%;
+    border: #a64d4d solid 1px;
+    padding: 10px;
+    margin: 10px;
 }
 
 #pets {
     display: flex;
-    flex-wrap: wrap;
-    
-      
+    flex-wrap: wrap;   
 }
 
 .petInfo {
     background-color: #f2f5f2;
     border: #a64d4d solid 3px;
-    height: 50%;
-    width: 25%;
+    width: 27%;
     border-radius: 5%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
-    padding: 5px;
+    margin-bottom: 20px;
+    padding: 2px;    
 }
 
 .petInfo footer {
-    background-color: ;
-    height: 5%;
     border-top:  #a64d4d solid 1px;
+  }
+
+  .petInfo header {
+      border-bottom: #a64d4d solid 1px;
+  }
+
+  section {
+      margin: auto;
+      padding: auto;
+      height: 65%;
   }
