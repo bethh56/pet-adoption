@@ -4,19 +4,18 @@ body {
     text-align: center;  
 }
 
-img {
-    width: 80%;
+header h1{
+    background-color: #f2f5f2;
+    width: 100%;
     border: #a64d4d solid 1px;
-    padding: 10px;
-    margin: 10px;
-}
+  }
 
 #pets {
     display: flex;
-    flex-wrap: wrap;   
-}
+    flex-wrap: wrap;    
+}  
 
-.petInfo {
+#petInfo {
     background-color: #f2f5f2;
     border: #a64d4d solid 3px;
     width: 27%;
@@ -24,19 +23,46 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    padding: 2px;    
+    padding: 2px;  
 }
 
-.petInfo footer {
+.petName {
+    border-bottom: #a64d4d solid 1px;
+    height: 10%;
+}
+
+.petFacts {
+    height: 70%;
+}
+
+img {
+    width: 70%;
+    border: #a64d4d solid 1px;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.petColor {
+    text-align: center;
+    margin: 5px;
+}
+
+.petSkill {
+    text-align: center;
+    margin: 5px;
+}
+
+
+.cardType {
     border-top:  #a64d4d solid 1px;
+    height: 8%;
   }
 
-  .petInfo header {
-      border-bottom: #a64d4d solid 1px;
-  }
 
-  section {
-      margin: auto;
-      padding: auto;
-      height: 65%;
-  }
+ 
+
+
+
+  
