@@ -86,7 +86,7 @@ const buildPetCards = () => {
         domString += `<h4 class="petColor">${pets[i].Color}</h4>`;
         domString += `<h4 class="petSkill">${pets[i].skill}</h4>`;
         domString += `</section>`
-        domString += `<footer class="cardType"><h3>${pets[i].type}</h3></footer>`;
+        domString += `<footer class="animalType"><h3>${pets[i].type}</h3></footer>`;
         domString += `</div>`;
     }
     printToDom('pets', domString);
@@ -95,12 +95,14 @@ const buildPetCards = () => {
 buildPetCards();
 
 const dogButton = document.createElement('button');dogButton.innerHTML = "Dogs";
-document.body.appendChild(dogButton);
+document.button.appendChild(dogButton);
 
 const catButton = document.createElement('button');
 catButton.innerHTML = "Cats";
-document.body.appendChild(catButton);
+document.button.appendChild(catButton);
 
 const dinoButton = document.createElement('button');
 dinoButton.innerHTML = "Dino";
-document.body.appendChild(dinoButton);
+document.button.appendChild(dinoButton);
+
+
