@@ -79,17 +79,21 @@ const printToDom = (divId, textToPrint) => {
 const buildPetCards = () => {
     let domString = '';
     for (let i = 0; i < pets.length; i++) {
-        domString += `<div class ="petInfo">`;
-        domString += `<header><h2>${pets[i].Name}</h2></header>`;
-        domString += `<section>`;
+        domString += `<div id="petInfo">`;
+        domString += `<header class="petName"><h2>${pets[i].Name}</h2></header>`;
+        domString += `<section class="petFacts">`;
         domString += `<img src="${pets[i].Image}"/>`;
-        domString += `<h4>${pets[i].Color}</h4>`;
-        domString += `<h4>${pets[i].skill}</h4>`;
+        domString += `<h4 class="petColor">${pets[i].Color}</h4>`;
+        domString += `<h4 class="petSkill">${pets[i].skill}</h4>`;
         domString += `</section>`;
-        domString += `<footer><h3>${pets[i].type}</h3></footer>`;
+        domString += `<footer class="${pets[i].type}animalType"><h3>${pets[i].type}</h3></footer>`;
         domString += `</div>`;
     }
     printToDom('pets', domString);
 }
 
 buildPetCards();
+
+
+
+
