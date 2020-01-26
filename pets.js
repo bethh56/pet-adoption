@@ -81,12 +81,12 @@ const buildPetCards = () => {
     for (let i = 0; i < pets.length; i++) {
         domString += `<div id="petInfo">`;
         domString += `<header class="petName"><h2>${pets[i].Name}</h2></header>`;
-        domString += `<section class="petFacts">`
+        domString += `<section class="petFacts">`;
         domString += `<img src="${pets[i].Image}"/>`;
         domString += `<h4 class="petColor">${pets[i].Color}</h4>`;
         domString += `<h4 class="petSkill">${pets[i].skill}</h4>`;
-        domString += `</section>`
-        domString += `<footer class="animalType"><h3>${pets[i].type}</h3></footer>`;
+        domString += `</section>`;
+        domString += `<footer class="${pets[i].type}animalType"><h3>${pets[i].type}</h3></footer>`;
         domString += `</div>`;
     }
     printToDom('pets', domString);
@@ -94,15 +94,6 @@ const buildPetCards = () => {
 
 buildPetCards();
 
-const dogButton = document.createElement('button');dogButton.innerHTML = "Dogs";
-document.button.appendChild(dogButton);
 
-const catButton = document.createElement('button');
-catButton.innerHTML = "Cats";
-document.button.appendChild(catButton);
-
-const dinoButton = document.createElement('button');
-dinoButton.innerHTML = "Dino";
-document.button.appendChild(dinoButton);
 
 

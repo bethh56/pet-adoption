@@ -11,6 +11,51 @@ header h1{
     padding: 10px;
   }
 
+#button {
+    display: flex;
+    justify-content: center; 
+}
+
+.dogsButton {
+    text-align: center;
+    background-color: lightsteelblue;
+    margin: 15px;
+    padding: 10px;
+    border: solid 3px #f2f5f2;
+    color: #f2f5f2;
+    width: 10%;
+} 
+
+.catsButton {
+    text-align: center;
+    background-color: #a64d4d;
+    margin: 15px;
+    padding: 10px;
+    border: solid 3px #f2f5f2;
+    color: #f2f5f2;
+    width: 10%;
+}
+
+.dinoButton {
+    text-align: center;
+    background-color: rgb(60, 168, 60);
+    margin: 15px;
+    padding: 10px;
+    border: solid 3px #f2f5f2;
+    color: #f2f5f2;
+    width: 10%;
+}
+
+.allButton {
+    text-align: center;
+    background-color: purple;
+    margin: 15px;
+    padding: 10px;
+    border: solid 3px #f2f5f2;
+    color: #f2f5f2;
+    width: 10%;
+}
+
 #pets {
     display: flex;
     flex-wrap: wrap;
@@ -47,24 +92,21 @@ img {
     margin-top: 10px;
 }
 
-
-
-h4 {
+.petColor {
     text-align: center;
     margin: 5px;
 }
 
+.petSkill {
+    text-align: center;
+    margin: 5px;
+}
 
 .animalType {
     height: 30px;
     background-color: #a64d4d;
-  }
+}
 
-  button {
-    width: 25%;
-    size: 50px;
-    display: inline;
-  }
 
 
  
