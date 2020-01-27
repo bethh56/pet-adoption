@@ -23,17 +23,17 @@ header h1{
     padding: 10px;
     border: solid 3px #f2f5f2;
     color: #f2f5f2;
-    width: 10%;
+    width: 100px;
 } 
 
 .catsButton {
     text-align: center;
-    background-color: #a64d4d;
+    background-color: #c53c3c;
     margin: 15px;
     padding: 10px;
     border: solid 3px #f2f5f2;
     color: #f2f5f2;
-    width: 10%;
+    width: 100px;
 }
 
 .dinoButton {
@@ -43,7 +43,7 @@ header h1{
     padding: 10px;
     border: solid 3px #f2f5f2;
     color: #f2f5f2;
-    width: 10%;
+    width: 100px;
 }
 
 .allButton {
@@ -53,7 +53,7 @@ header h1{
     padding: 10px;
     border: solid 3px #f2f5f2;
     color: #f2f5f2;
-    width: 10%;
+    width: 100px;
 }
 
 #pets {
@@ -102,9 +102,22 @@ img {
     margin: 5px;
 }
 
-.animalType {
+.DoganimalType {
     height: 30px;
-    background-color: #a64d4d;
+    background-color: lightsteelblue;
+    color: white;
+}
+
+.DinoanimalType {
+    height: 30px;
+    background-color: rgb(60, 168, 60);
+    color: white;
+}
+
+.CatanimalType {
+    height: 30px;
+    background-color: #c53c3c;
+    color: white;
 }
 
 

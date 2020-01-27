@@ -86,7 +86,9 @@ const buildPetCards = () => {
         domString += `<h4 class="petColor">${pets[i].Color}</h4>`;
         domString += `<h4 class="petSkill">${pets[i].skill}</h4>`;
         domString += `</section>`;
+        domString += `<div class="petType">`;
         domString += `<footer class="${pets[i].type}animalType"><h3>${pets[i].type}</h3></footer>`;
+        domString += `</div>`;
         domString += `</div>`;
     }
     printToDom('pets', domString);
