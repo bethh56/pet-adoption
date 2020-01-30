@@ -76,25 +76,53 @@ const printToDom = (divId, textToPrint) => {
     selectedDiv.innerHTML = textToPrint;
 }
 
-const buildPetCards = () => {
+const buildPetCards = (petInfoCards) => {
     let domString = '';
-    for (let i = 0; i < pets.length; i++) {
+    for (let i = 0; i < petInfoCards.length; i++) {
         domString += `<div id="petInfo">`;
-        domString += `<header class="petName"><h2>${pets[i].Name}</h2></header>`;
+        domString += `<header class="petName"><h2>${petInfoCards[i].Name}</h2></header>`;
         domString += `<section class="petFacts">`;
-        domString += `<img src="${pets[i].Image}"/>`;
-        domString += `<h4 class="petColor">${pets[i].Color}</h4>`;
-        domString += `<h4 class="petSkill">${pets[i].skill}</h4>`;
+        domString += `<img src="${petInfoCards[i].Image}"/>`;
+        domString += `<h4 class="petColor">${petInfoCards[i].Color}</h4>`;
+        domString += `<h4 class="petSkill">${petInfoCards[i].skill}</h4>`;
         domString += `</section>`;
         domString += `<div class="petType">`;
-        domString += `<footer class="${pets[i].type}animalType"><h3>${pets[i].type}</h3></footer>`;
+        domString += `<footer class="${petInfoCards[i].type}animalType"><h3>${petInfoCards[i].type}</h3></footer>`;
         domString += `</div>`;
         domString += `</div>`;
     }
     printToDom('pets', domString);
+};
+
+const adoptionFilter = (e) => {
+  const buttonId = e.target.id;
+  if(buttonId === 'All'){
+      buildPetCards(pets);
+  } else {
+      const adoptionCards = [];
+      for(let i = 0; i < pets.length; i++) {
+          if(pets[i].type === buttonId) {
+          adoptionCards.push(pets[i]);
+          }
+      }
+      buildPetCards(adoptionCards);
+  }
+};
+
+const events = () => {
+  document.getElementById("Dog").addEventListener('click', adoptionFilter);
+  document.getElementById("Cat").addEventListener('click', adoptionFilter);
+  document.getElementById("Dino").addEventListener('click', adoptionFilter);
+  document.getElementById("All").addEventListener('click', adoptionFilter);
+};
+
+const init = () => {
+  buildPetCards(pets);
+  events();
 }
 
-buildPetCards();
+init();
+
 
 
 
