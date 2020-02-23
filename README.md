@@ -6,10 +6,10 @@
 - Filter buttons at the top lets user filter what type of pets they would like to view. 
 
 ## Screen Shot
-![All pets view]()
-![Dogs view]()
-![Dinos view]()
-![Cats view]()
+![All pets view](https://raw.githubusercontent.com/bethh56/pet-adoption/master/screenshots/Screenshot%20(12).png)
+![Dogs view](https://raw.githubusercontent.com/bethh56/pet-adoption/master/screenshots/Screenshot%20(13).png)
+![Dinos view](https://raw.githubusercontent.com/bethh56/pet-adoption/master/screenshots/Screenshot%20(15).png)
+![Cats view](https://raw.githubusercontent.com/bethh56/pet-adoption/master/screenshots/Screenshot%20(14).png)
 
 ## How to Run
 1. Clone down this repo
